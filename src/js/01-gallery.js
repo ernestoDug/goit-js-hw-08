@@ -36,11 +36,11 @@ galeryUl.insertAdjacentHTML("afterbegin", galleryLi);
 // * використовую шаблон з бібліотеки
 
   new SimpleLightbox(".gallery a", {
-      navText: ["<<", ">>"],
+      navText: ["-", "+"],
       captionsData: "alt",
       captionPosition: "",
       captionDelay: 250,
-      closeText: "X",
+      closeText: "x",
       animationSpeed: 300,
       download: "true",
     });
