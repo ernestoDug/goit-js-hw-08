@@ -2,13 +2,10 @@
 import { galleryItems } from './gallery-items';
 // Change code below this line
 
-// Описаний в документації
+// Описані в документації стилі
 import SimpleLightbox from "simplelightbox";
 // Додатковий імпорт стилів
 import "simplelightbox/dist/simple-lightbox.min.css";
-
-
-
 console.log(galleryItems);
 
 // Додай бібліотеку SimpleLightbox як залежність проекту, використовуючи npm (посилання на CDN з твоєї минулої роботи більше не потрібне).

@@ -39,16 +39,15 @@ localStorage.setItem("feedback-form-state",  JSON.stringify(feedbackObj));
 // ПЕРЕВІРКА ДАННИХ СХОВИЩА
 function getFromStor() {
         const savedInlocalSt = localStorage.getItem("feedback-form-state");
-        const savedInlocalStParse = JSON.parse(savedInlocalSt);
-        // УМОВА ЯКЩО СХОВИЩЕ НЕ ПОРОЖНЄ 
-    if (savedInlocalSt)
-    {
-        //  оновлення В Dom  ТЕКСТ АРЕА
-        formTextArea.value = savedInlocalStParse.message;
-                //  оновлення В Dom  ТЕКСТ ІНПУТА ІМЕЙЛА
-        formInput.value = savedInlocalStParse.email;
-    }
+        const savedInlocalStParse = JSON.parse(savedInlocalSt) ?? {};
+               
+        if (savedInlocalStParse)
+        {
+            //  оновлення В Dom  ТЕКСТ АРЕА
+            formTextArea.value = savedInlocalStParse.message;
+                    //  оновлення В Dom  ТЕКСТ ІНПУТА ІМЕЙЛА
+            formInput.value = savedInlocalStParse.email;
+        }
 }
 
 
-// form.addEventListener("input", (event) => {console.log("вот цл", event.target)});
