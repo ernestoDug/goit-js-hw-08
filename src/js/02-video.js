@@ -33,7 +33,7 @@ function timeFunk(event) {
   );
 }
 // отримую з сховища
-const favoriteAr = localStorage.getItem('videoplayer-current-time') ?? [];
+const favoriteAr = localStorage.getItem('videoplayer-current-time') ?? '';
 
 // витягаю час методом бібліотеки для відтворення
 if (favoriteAr) {
